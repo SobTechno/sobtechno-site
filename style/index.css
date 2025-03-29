@@ -1,0 +1,292 @@
+@font-face {
+    font-family: Yekan;
+    src: url('/img/font/Yekan-Bakh-FaNum-05-Medium.woff');
+}
+
+:root {
+    --primeColor: #03A55C;
+    --font-coler: #232323fd;
+    --box-shadow: 0 10px 15px -3px rgb(19 108 90 / .1), 0 4px 6px -4px rgb(19 108 90 / .1);
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    left: 0;
+    font-size: 14px;
+    background-color: #F0F7F6;
+    color: var(--font-coler);
+    font-family: Yekan;
+
+}
+
+.main {
+    overflow: auto, padding;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+}
+.a-link {
+    margin: 4px;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+.on-scroll {
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    .a-link{
+        color: var(--font-coler);
+    }
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.a-optoin {
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
+.Lang-option {
+    color: #fff;
+    width: 10px;
+    height: 10px;
+    padding: 2px 4px;
+    margin: 2px;
+    border-radius: 5px;
+    background-color: var(--primeColor);
+}
+
+.title {
+    margin: auto;
+    margin-top: 30px;
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    width: 150px;
+}
+
+.center-1 {
+    display: flex;
+    width: 95%;
+    margin: auto;
+    margin-top: 70px;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    height: 300px;
+}
+
+.center-1-left {
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    padding: 30px;
+    width: 50%;
+    border-radius: 10px;
+    position: relative;
+}
+
+.center-2 {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-top: 70px;
+    justify-content: space-around;
+    height: 300px;
+}
+
+.center-2-right {
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    padding: 30px;
+    width: 50%;
+    border-radius: 10px;
+    position: relative;
+}
+
+.center-img {
+    width: 600px;
+    height: inherit;
+    box-shadow: var(--box-shadow);
+
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+}
+
+.center-h2-img {
+    width: 40px;
+    margin: 7px;
+}
+
+.center-h1 {
+    display: flex;
+    font-size: 30px;
+    align-items: center;
+    text-align: right;
+    margin: 0;
+}
+
+.center-text {
+    font-size: 20px;
+    width: 100%;
+}
+
+.top-page {
+    width: 100%;
+    overflow: hidden;
+    background-image: url('/img/applications-of-computer-programming.webp');
+    background-size: cover;
+    background-position: 50%;
+    zoom: 1;
+    height: 700px;
+    display: flex;
+    align-items: center;
+}
+
+.t-page {
+    width: 100%;
+    padding: 2rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #03a55c71;
+    z-index: 3;
+}
+
+.t-page-big {
+    color: #fff;
+    font-size: 3.3rem;
+    font-weight: bold;
+
+}
+
+.t-page-small {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
+.big-info-box{
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+.info-box{
+    width: 200px;
+    font-size: 18px;
+    background-color: #fff;
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    height: 100px;
+}
+.t-page-img img {
+    width: 40px;
+    border: none;
+}
+.box{
+    opacity: 0;
+    transition: opacity 1s;
+}
+.show{
+    opacity: 1;
+    transform: translateX(0);
+}
+.social-box{
+    width: 90%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.social-link{
+    width: 330px;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 1rem;
+}
+.social{
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+}
+.tel{
+    background-color: #007ec2;
+}
+.git{
+    background-color: #000;
+}
+.eta{
+    background-color: #d04e02;
+}
+.social img{
+    width: 60px;
+    padding: 4px;
+}
+
+@media (max-width:1080px) {
+    .t-page-img {
+        left: 45%;
+    }
+    .center-text{
+        font-size: 18px;
+    }
+    .center-1,.center-2{
+        margin-top: 20px;
+    }
+    .center-1-left{
+        width: 80%;
+    }
+    .center-2-right{
+        width: 80%;
+    }
+    .center-img{
+        display: none;
+    }
+    .title{
+        margin-top: 5rem;
+    }
+    .t-page-small{
+        font-size: 1.3rem;
+    }
+    .a-link {
+        font-size: 14px;
+        margin: 10px;
+    }
+    .a-optoin{
+        width: 60%;
+    }
+    .header-section img{
+        width: 100px;
+    }
+    
+}
